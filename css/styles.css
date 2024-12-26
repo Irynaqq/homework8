@@ -123,9 +123,12 @@ body {
 
 /* What we are doing section */
 .activities {
+    padding: 0 0 94px;
+}
+
+.do-title {
+    margin-bottom: 50px;
     text-align: center;
-    padding: 20 0;
-    background-color: #FFFFFF;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
@@ -133,65 +136,60 @@ body {
 
 .activity-images {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
-.activity-images img {
-    width: 370px;
-    height: 294px;
-    object-fit: cover;
-    border-radius: 5px;
+.do-card {
+flex: 1 1 30%;
+}
+
+.do-card-img {
+width: 100%;
+height: 294px;
+object-fit: cover;
 }
 
 /* Our team section */
 .team {
     background-color: #F5F4FA;
-    padding: 40px 20px;
-    height: 648px;
+    padding: 94px 0;
 }
 
-.team h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 36px;
+.team-title {
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
 }
 
 .team-members {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+}
+
+.member div {
+    padding: 24px;
 }
 
 .member {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    min-width: 270px;
-    min-height: 368px;
+    flex: 1 1 20%;
+    gap: 30px;
 }
+
 .member img {
     width: 100%;
     height: 260px;
     object-fit: cover;
-    
-}
-
-.member h4, .member p {
-    margin: 5px 0;
 }
 
 .member h4 {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0 0 18;
 }
 
 .member p {
@@ -204,13 +202,25 @@ body {
 footer {
     background-color: #2F303A;
     color: #FFFFFF;
-    text-align: left;
-    padding: 20px 0;
-    height: 252px;
+    padding: 60px 0;
 }
 
-.footer-content img, .footer-content p {
-    margin-left: 380px;
+.footer-content-container {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    margin-left: 0 auto;
+}
+
+a {
+    align-self: flex-start;
+}
+
+img {
+    width: 145px;
+}
+
+a, p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
