@@ -176,7 +176,7 @@ object-fit: cover;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1 1 20%;
-    gap: 30px;
+    gap: 20px;
 }
 
 .member img {
@@ -277,6 +277,7 @@ a, p {
     padding: 15px;
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
+    position: relative;
 }
 
 .portfolio-img img {
@@ -299,4 +300,26 @@ p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
+}
+
+.cards-title {
+    height: 294px;
+    background: rgba(33, 150, 243, 0.898);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    padding: 24px;
+}
+
+.card:hover .cards-title {
+    opacity: 1;
 }
