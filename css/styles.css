@@ -63,6 +63,73 @@ body {
     gap: 50px;
 }
 
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #ddd;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu-item-4 {
+    position: relative;
+}
+
+.submenu-item-4:hover .submenu-left {
+    display: block;
+}
+
+.submenu-left {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -160px;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 10px 1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submenu-left li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+
 /* HERO */
 
 .hero {
