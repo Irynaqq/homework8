@@ -134,7 +134,7 @@ body {
 
 .hero {
     height: 600px;
-    background: #2F303A;
+    background: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../img/background.png) no-repeat center/cover;
     color: #fff;
     display: flex;
     align-items: center;
@@ -160,7 +160,6 @@ body {
     font-weight: 700;
 }
 /* ABOUT */
-
 .about {
     padding: 94px 0;
 }
@@ -168,24 +167,46 @@ body {
 .about-cards {
     display: flex;
     gap: 30px;
-}
-
-.about-card {
-    flex: 1 1 25%;
+    height: 251px;
 }
 
 .about-card-title {
-    font-family: 'Roboto';
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .about-card-desc {
-    font-family: 'Roboto';
-    font-weight: 400;
     color: #757575;
     text-align: justify;
+}
+
+.about-card {
+    flex: 1 1 25%;
+    position: relative;
+    padding-top: 150px;
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #F5F4FA url(../img/antenna\ 1.svg) no-repeat 50% / 70px 70px;
+}
+
+.about-card:nth-child(2)::before {
+    background-image: url(../img/clock\ 1.svg);
+}
+
+.about-card:nth-child(3)::before {
+    background-image: url(../img/diagram\ 1.svg)
+}
+
+.about-card:nth-child(4)::before {
+    background-image: url(../img/astronaut\ 1.svg);
 }
 
 /* What we are doing section */
@@ -232,6 +253,7 @@ object-fit: cover;
 
 .team-members {
     display: flex;
+    justify-content: space-between;
 }
 
 .member div {
@@ -244,6 +266,7 @@ object-fit: cover;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1 1 20%;
     gap: 20px;
+    height: 428px;
 }
 
 .member img {
@@ -263,7 +286,67 @@ object-fit: cover;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
+    padding-top: 10px;
     }
+
+
+/*customers*/
+.container-customers {
+    height: 300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+    justify-content: center;
+    
+}
+
+.icons {
+    gap: 30px;
+    display: flex;
+}
+.icon{
+    position: relative;
+    flex: 1 1 15%;
+
+}
+.icon::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 92px;
+    width: 170px;
+    background: url(../img/customer1.svg) no-repeat 50% / 106px 60px;
+    border: 1px solid #AFB1B8;
+    border-radius: 8px;
+}
+
+.icon:nth-child(2)::before {
+    background: url(../img/customer2.svg) no-repeat 50%;
+}
+
+.icon:nth-child(3)::before {
+    background: url(../img/customer3.svg) no-repeat 50%;
+}
+.icon:nth-child(4)::before {
+    background: url(../img/customer4.svg) no-repeat 50%;
+}
+
+.icon:nth-child(5)::before {
+    background: url(../img/customer5.svg) no-repeat 50%;
+}
+
+.icon:nth-child(6)::before {
+    background: url(../img/customer6.svg) no-repeat 50%;
+}
+
+.customers-title {
+    margin-bottom: 50px;
+    margin-top: 94px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+}
 
 /* Footer */
 footer {
@@ -294,6 +377,36 @@ a, p {
     font-size: 14px;
     gap: 20px;
 }
+
+.footer-content-container+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-icons{
+    width: 206px;
+    height: 80px;
+}
+.icon-title{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.footer-img{
+    position: relative;
+}
+
+.footer-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 206px;
+    height: 44px;
+    background: url(../img/Ellipse.svg) no-repeat 50%,
+}
+
+
 
 /*second page*/
 
